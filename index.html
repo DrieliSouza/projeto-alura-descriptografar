@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Decodificador de Texto - Alura Challenges Oracle ONE</title>
+		<link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+		<link rel="stylesheet" href="styles.css">
+	
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img
+					class="logo"
+					src="./assets/alura.PNG"
+					alt="letra a"
+				/>
+			</a>
+		</header>
+		<main class="container">
+			<section class="box">
+				<textarea
+					id="entrada-texto"
+					class="caixaTexto"
+					placeholder="Digite seu texto..."
+				></textarea>
+				<span class="alerta"
+					><i class="icone-alerta fa-solid fa-circle-exclamation"></i
+					>Apenas letras minúsculas e sem acento.</span
+				>
+				<div class="botoes">
+					<button
+						onclick="criptografarTexto()"
+						id="criptografar"
+						class="btn-criptografar"
+						type="button"
+					>
+						Criptografar
+					</button>
+					<button
+						onclick="descriptografarTexto()"
+						id="descriptografar"
+						class="btn-descriptografar"
+						type="button"
+					>
+						Descriptografar
+					</button>
+				</div>
+			</section>
+			<section class="menu-lateral">
+				<div id="lateral" class="conteudo-lateral">
+					<img
+						class="logo-menu"
+						src="./assets/imagem.PNG"
+						alt="Logo Espião"
+					/>
+					<div class="menu-texto">
+						<h1 class="titulo-menu-lateral">
+							Nenhuma mensagem encontrada
+						</h1>
+						<p class="texto-menu-lateral">
+							Digite um texto que você deseja criptografar ou
+							descriptografar.
+						</p>
+					</div>
+				</div>
+				<div id="resultado" class="resultado-lateral">
+					<textarea
+						id="saida-texto"
+						class="caixaTextoResultado"
+					></textarea>
+					<button
+						onclick="copiarTexto()"
+						id="btn-copiar"
+						class="btn-copiar"
+						type="button"
+					>
+						Copiar
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="rodape">
+			<p>
+				Desenvolvido por
+				<strong class="destaque-rodape">Drieli Souza</strong>
+			</p>
+			
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>
